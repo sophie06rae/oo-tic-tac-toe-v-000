@@ -115,8 +115,8 @@ else
 end
 end
 
-def winner(board)
-  if win = won?(board)
+def winner
+  if win = won?
     board[win.first]
     end
   end
