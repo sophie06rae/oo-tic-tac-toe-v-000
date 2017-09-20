@@ -52,7 +52,6 @@ WIN_COMBINATIONS = [
   input = gets.strip
   index = input_to_index(input)
   valid_move?(index) ? move(index) : turn
-  end
   display_board
   end
 
