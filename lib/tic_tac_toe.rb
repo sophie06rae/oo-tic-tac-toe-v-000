@@ -99,7 +99,7 @@ def full?
   end
 end
 
-def draw?(board)
+def draw?
 if won? == false && full? == true
   return true
 else
