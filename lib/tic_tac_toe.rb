@@ -107,8 +107,8 @@ else
 end
 end
 
-def over?(board)
-if won?(board) != false || draw?(board) == true || full?(board) == true
+def over?
+if won? != false || draw? == true || full? == true
   return true
 else
   return false
