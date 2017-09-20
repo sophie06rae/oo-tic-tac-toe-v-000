@@ -59,9 +59,9 @@ WIN_COMBINATIONS = [
   display_board
 end
 
-def turn_count(board)
+def turn_count
   turns_taken = 0
-  board.each do |occupied_position|
+  @board.each do |occupied_position|
     if occupied_position == "X" || occupied_position == "O"
       turns_taken +=1
     end
