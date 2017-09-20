@@ -54,6 +54,6 @@ WIN_COMBINATIONS = [
   valid_move?(index) ? move(index) : turn
   end
   display_board
-end
+  end
 
 end
