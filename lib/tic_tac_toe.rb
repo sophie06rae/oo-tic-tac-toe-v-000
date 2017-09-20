@@ -71,7 +71,7 @@ def current_player
   end
 end
 
-def won?(board)
+def won?
   WIN_COMBINATIONS.each do |win_combination|
 
     win_index_1 = win_combination[0]
@@ -90,9 +90,9 @@ def won?(board)
   false
 end
 
-def full?(board)
+def full?
   space = " "
-  if board.include?(space)
+  if @board.include?(space)
     return false
   else
     return true
@@ -100,7 +100,7 @@ def full?(board)
 end
 
 def draw?(board)
-if won?(board) == false && full?(board) == true
+if won? == false && full? == true
   return true
 else
   return false
